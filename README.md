@@ -16,7 +16,7 @@ cd ./bicep
 az deployment group create --resource-group my_bicep_vm_rg --template-file ./main.bicep --param ./main.bicepparam
 ```
 
-### Delete the resource group
+### Delete the newly created resource group
 ```bash
 az group delete --name my_bicep_vm_rg --yes --no-wait
 ```
@@ -31,7 +31,7 @@ terraform plan -out main.tfplan # shows the resources that will be created
 terraform apply main.tfplan
 ```
 
-### Delete the resource group
+### Delete the newly created resource group
 ```bash
 az group delete --name ***  --yes --no-wait
 ``` 
